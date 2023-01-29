@@ -1,0 +1,8 @@
+section p {
+    color: rgb(255, 0, 75);
+    font-size: 25px;
+    line-height: 39px;
+}
+p {
+    color: rgb(255, 0, 75);
+}
