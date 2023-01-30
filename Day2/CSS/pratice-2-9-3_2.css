@@ -1,0 +1,32 @@
+*{
+    /* margin: 0 auto; */
+    padding: 0;
+}
+
+
+.wrap {
+    position: relative;
+    padding: 2px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    /* margin: 5px; */
+}
+
+.box{
+    background-color: #fa0;
+    margin: 5px;
+}
+
+.box-0{
+    position: relative;
+}
+
+.box-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+}
