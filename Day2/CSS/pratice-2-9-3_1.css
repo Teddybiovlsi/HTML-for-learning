@@ -1,0 +1,23 @@
+.wrap {
+    height: 100vh;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #faf;
+    text-align: center;
+    line-height: 150px;
+    font-size: 40px;
+
+}
+
+.box-1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #aff;
+    text-align: center;
+    line-height: 150px;
+    font-size: 40px;
+}
