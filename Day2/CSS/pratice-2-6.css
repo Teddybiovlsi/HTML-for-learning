@@ -1,0 +1,11 @@
+p {
+    color: black;
+}
+
+.div_box {
+    height: 300px;
+    width: 300px;
+    border: #55387F solid 2px;
+    background-color: #8991B9;
+    overflow: hidden;
+}
