@@ -9,8 +9,8 @@
 }
 
 .box {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     background-color: #faf;
     text-align: center;
     line-height: 150px;
@@ -23,8 +23,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     background-color: #aff;
     text-align: center;
     line-height: 150px;
