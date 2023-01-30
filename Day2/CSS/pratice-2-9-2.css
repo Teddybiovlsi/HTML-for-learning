@@ -1,16 +1,29 @@
-.wrap {
-    padding: 2px;
-    background-color: #ccc;
+* {
+    clear: both;
+    margin: 0;
+    padding: 0;
 }
 
-div {
+/* 將wrap 內的所有div child皆設置基本CSS */
+.wrap div {
+    display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: #888;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
     margin: 5px;
+
 }
 
 .box {
+    background-color: #888;
+}
+
+.sec_box {
     position: relative;
-    background-color: red;
+    border: 5px solid red;
+    background-color: #faf;
+    top: 50px;
+    left: 50px;
 }
