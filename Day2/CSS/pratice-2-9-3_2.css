@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrap {
+    height: 100vh;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #faf;
+    text-align: center;
+    line-height: 150px;
+    font-size: 40px;
+    margin: 5px;
+
+}
+
+.box-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: #aff;
+    text-align: center;
+    line-height: 150px;
+    font-size: 40px;
+}
