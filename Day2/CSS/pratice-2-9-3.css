@@ -1,0 +1,19 @@
+.wrap {
+    padding: 2px;
+    /* background-color: #ccc; */
+}
+
+div div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #888;
+    margin: 5px;
+}
+
+.last-box {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    background-color: red;
+}
