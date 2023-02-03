@@ -6,33 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day3 alert練習</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <style>
-        #firstTitle {
-            cursor: pointer;
-        }
-        #firstTitle:hover {
-            color: red;
-        }
-    </style>
 </head>
 
 <body>
-    <h1 id="firstTitle">第三天練習</h1>
+
 </body>
 
-<script>
-    let h1Tag = document.getElementsByTagName("h1");
-    console.log(h1Tag);
+<script type="text/javascript">
 
-    let h1class = document.getElementById("firstTitle").innerText;
-    console.log(h1class);
+    var message = "這是第三天JavaScript的變數練習";
 
+    var message = "這是var變數的練習";
 
-    // 當按下firstTitle的HTML時會觸發取得內容
-    $("h1").click((e) => {
-        alert($('#firstTitle').text());
-    });
+    let messageLet = "這是let變數的練習";
+
+    // const messageConst = "這是const的練習";
+    
+    // messageConst = "這是const的練習Lorem ipsum dolor sit amet.";
+    // console.log(messageConst);
 
 
 </script>
