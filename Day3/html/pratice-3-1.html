@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3 alert練習</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <h1 id="firstTitle">第三天練習</h1>
+</body>
+
+<script>
+    let h1Tag = document.getElementsByTagName("h1");
+    console.log(h1Tag);
+
+    let h1class = document.getElementById("firstTitle").innerText;
+    console.log(h1class);
+
+    $("h1").click((e) => {
+        alert(('#firstTitle').innerText);
+    });
+</script>
+
+</html>
