@@ -11,8 +11,17 @@
 <body></body>
 
 <script>
-    const message = "JavaScript const變數無法更改";
-    console.log(message);
+    // ES6以前
+    let Brief = "JavaScript ES6的變數關鍵字"
+    
+    let message_traditional = `let and const是` + Brief;
+    console.log("Before ES6:", message_traditional);
+
+    // ES6以後
+    let message_ES6 = `let and const是 ${Brief}`;
+    console.log("ES6:", message_ES6);
+
+
 </script>
 
 </html>

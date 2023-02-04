@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day3 函數練習</title>
+</head>
+
+<body></body>
+
+<script>
+
+    function CalAge() {
+        let year = prompt("請輸入今年西元年：");
+        let birth = prompt("請輸入您的出生年：");
+        let RealAge = year - birth;
+        const LittleBrief = `I'm born at year:${birth}  I'm ${RealAge} years old `;
+        return LittleBrief;
+    }
+    let MyAge = CalAge();
+    alert(MyAge);
+
+</script>
