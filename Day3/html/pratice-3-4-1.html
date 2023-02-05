@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Day3 變數練習</title>
+</head>
+
+<body>
+    <h1 id="FirstHeading" class="elemclass">DOM練習1 getElementById</h1>
+    <!-- <button onclick="changeColor('#8958A6');">purple</button> -->
+    <!-- <button onclick="changeColor('red');">red</button> -->
+    <button id='purple_btn'>purple</button>
+    <button id='red_btn'>red</button>
+
+</body>
+
+<script>
+
+    // function changeColor(newColor) {
+    //     const elem = document.getElementById('FirstHeading');
+    //     elem.style.color = newColor;
+    // }
+    $('#FirstHeading').css('cursor', 'pointer');
+    $('#FirstHeading').click(function () {
+        $('#FirstHeading').css("color", 'red');
+        // $('#FirstHeading').style.cursor = 'pointer';
+    });
+
+    $('#purple_btn').click(function () {
+        const elem = document.getElementById('FirstHeading');
+        elem.style.color = '#8958A6';
+    });
+
+    $('#red_btn').click(function () {
+        const elem = document.getElementById('FirstHeading');
+        elem.style.color = 'red';
+    });
+    // console.log(document.getElementById('FirstHeading'));
+    // console.log($('#FirstHeading'));
+</script>
