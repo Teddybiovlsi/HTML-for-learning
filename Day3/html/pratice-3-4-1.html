@@ -10,35 +10,60 @@
 </head>
 
 <body>
-    <h1 id="FirstHeading" class="elemclass">DOM練習1 getElementById</h1>
-    <!-- <button onclick="changeColor('#8958A6');">purple</button> -->
-    <!-- <button onclick="changeColor('red');">red</button> -->
-    <button id='purple_btn'>purple</button>
-    <button id='red_btn'>red</button>
+    <ul id="firstList" onclick="clickul();">
+        <li id="1" class="1">1</li>
+        <li id="2" class="2">2</li>
+        <li id="3" class="3">3</li>
+        <li class="3">4</li>
+        <li class="3">5</li>
+        <li class="3">6</li>
 
+    </ul>
 </body>
 
 <script>
 
-    // function changeColor(newColor) {
-    //     const elem = document.getElementById('FirstHeading');
-    //     elem.style.color = newColor;
-    // }
-    $('#FirstHeading').css('cursor', 'pointer');
-    $('#FirstHeading').click(function () {
-        $('#FirstHeading').css("color", 'red');
-        // $('#FirstHeading').style.cursor = 'pointer';
-    });
+    function Check(o) {
+        alert(o instanceof Element);
+    }
 
-    $('#purple_btn').click(function () {
-        const elem = document.getElementById('FirstHeading');
-        elem.style.color = '#8958A6';
-    });
+    let elem = document.getElementById("firstList");
 
-    $('#red_btn').click(function () {
-        const elem = document.getElementById('FirstHeading');
-        elem.style.color = 'red';
-    });
-    // console.log(document.getElementById('FirstHeading'));
-    // console.log($('#FirstHeading'));
+    Check($('#firstList').eq(0));
+
+    console.log(elem);
+
+    console.log($('#firstList'))
+
+    console.log($('#firstList') === elem);
+
+    console.log($('#firstList')[0] === elem);
+
+    console.log($('#firstList').get(0) === elem);
+    // compare with DOM element & DOM element
+    console.log($('#firstList').get(0) === $('#firstList')[0]);
+    // compare with DOM element & jQuery object
+    console.log($('#firstList')[0] === $('#firstList').eq(0));
+
+    console.log($('#firstList').innerHTML)
+
+    let obj = $('.3').eq(2);
+
+
+
+    // console.log(obj.get(0).innerHTML);
+
+    // console.log($('#firstList') === $('#firstList'));
+    // console.log($('#firstList')[0].nodeName);
+    // console.log($('#firstList').get(0).nodeName);
+    // console.log($('#firstList').html());
+    // console.log(typeof ($('#firstList').get(0).nodeName));
+    // console.log(typeof ($('#firstList')[0].nodeName));
+    // console.log(typeof ($('#firstList')));
+    // const sec_elem = $('.3:eq(2)');
+    // console.log(typeof ($('.3')))
+    // console.log(sec_elem.html('<h2>Hello jQuery select</h2>'))
+
+    // console.log(document.getElementById('firstList').innerHTML);
+
 </script>
