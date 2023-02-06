@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Day3 ｜ 運算元、運算子</title>
+</head>
+
+<body>
+</body>
+
+<script>
+
+    let welcomeMessage = "Hello JavaScript";
+
+    // 建立陣列
+    let arr = ["elem0", "elem1", "elem2", "elem3"];
+    // 建立空陣列
+    let arr1 = new Array(5)
+
+
+    // 原始fruit陣列
+    const fruit = ["apple", "strawberry", "pineapple", "apple", "strawberry", "pineapple"];
+    // 一般取出方式
+    firstFruit = fruit[0];
+    secondFruit = fruit[1];
+    thirdFruit = fruit[2];
+
+    // 解構賦值
+    // [best, second, third] = fruit;
+    // 僅取出array前兩個內容
+    // [best, second] = fruit;
+    // console.log(`My favorite food is ${best}, ${second} and ${third}`);
+    // 展開語法 - 複製fruit陣列至buyList陣列中
+    const buyList = [...fruit, "egg", "steak", "pork"];
+    // 其餘語法
+    const [first, second, third, ...other] = buyList;
+    
+    console.log(`Origin buyList array ${buyList}`);
+    console.log(`Others:${other}`);
+
+</script>
