@@ -83,28 +83,28 @@
 
     $(function () {
         $('a').click(function (e) {
-            event.preventDefault();
+            e.preventDefault();
         })
 
 
-        // $('#Nav2').hover(function () {
-        //     // $('#Nav2').css("color", 'red');
-        //     $('.NavContent').toggleClass('show');
-        // });
+        $('#Nav2').hover(function () {
+            // $('#Nav2').css("color", 'red');
+            $('.NavContent').toggleClass('show');
+        });
 
-        // $('#Nav2').hover(function () {
-        //     $('#Nav2href').css('color', 'red');
-        // }, function () {
-        //     $('#Nav2href').css('color', 'black');
-        // });
+        $('#Nav2').hover(function () {
+            $('#Nav2href').css('color', 'red');
+        }, function () {
+            $('#Nav2href').css('color', 'black');
+        });
 
-        // $('li').hover(function () {
-        //     console.log(this);
-        //     $(this).css('color', 'red');
-        // }, function () {
-        //     console.log(this)
-        //     $(this).css('color', 'black');
-        // });
+        $('li').hover(function () {
+            console.log(this);
+            $(this).css('color', 'red');
+        }, function () {
+            console.log(this)
+            $(this).css('color', 'black');
+        });
 
 
     });
