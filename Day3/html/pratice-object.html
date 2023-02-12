@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day3 |object教學</title>
-  </head>
-  <body></body>
 
-  <script>
-    const person = {
-      name: "Peter",
-      age: 22,
-      PersonalIntro() {
-        return `my name is ${this.name} my age is ${this.age}`;
-      },
-    };
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day3 |object教學</title>
+</head>
 
-    console.log(person.PersonalIntro());
-    // alert(x);
-  </script>
+<body></body>
+
+<script>
+  const person = {
+    name: "Peter",
+    age: 22,
+    country: 'Taiwan',
+    room: ['single', 'white desk', 'PC'],
+
+    littleBrief: function () {
+      return `I'm ${this.name}, I'm came from ${this.country} ,My room have ${this.room[1]}`
+    }
+  };
+
+  var showname = function () {
+    document.write(this.name);
+  }
+
+  document.write(person.littleBrief());
+  const hey = person.littleBrief();
+  hey;
+  // person.listname = showname;
+
+  // person.listname();
+
+</script>
+
 </html>

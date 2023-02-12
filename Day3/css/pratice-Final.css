@@ -1,0 +1,45 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  cursor: pointer;
+}
+
+li {
+  display: inline-block;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+
+.Nav2 {
+  position: relative;
+  display: inline-block;
+}
+
+.NavStyle {
+  padding: 10px;
+}
+
+.NavContent {
+  display: none;
+}
+
+.NavContent.show {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: auto;
+}
+
+.NavContent li {
+  display: block;
+  padding: 7px 5px;
+}
