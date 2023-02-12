@@ -1,79 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>跨領域系統暨生醫應用實驗室</title>
-  </head>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-    a {
-      text-decoration: none;
-    }
 
-    ul,
-    li {
-      list-style: none;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>跨領域系統暨生醫應用實驗室</title>
+  <link rel="stylesheet" href="../css/navapplicationStyle.css">
+</head>
 
-    ul {
-      display: flex;
-    }
+<body>
+  <nav>
+    <ul>
+      <li class="mainNavStyle"><a href="#">導覽內容1</a>
+      </li>
+      <li class="toggleTrigger mainNavStyle" id="nav2">
+        <a href="#">導覽內容2</a>
+        <ul class="navContent2" id="content2">
+          <li>內容1</li>
+          <li>內容2</li>
+          <li>內容3</li>
+        </ul>
+      </li>
+      <li class="toggleTrigger mainNavStyle" id="nav3">
+        <a href="#">導覽內容3</a>
+        <ul class="navContent3" id="content3">
+          <li>測試1</li>
+          <li>測試2</li>
+        </ul>
+      </li>
+      <li class="mainNavStyle"><a href="#">導覽內容4</a></li>
+      <li class="mainNavStyle"><a href="#">導覽內容5</a></li>
+    </ul>
+  </nav>
+</body>
 
-    .mainNavStyle {
-      margin: 10px;
-    }
-    .mainNavStyle > a {
-      color: red;
-    }
-    .mainNavStyle > a:hover {
-      color: black;
-    }
-    #content1,
-    #content2 {
-      display: block;
-      position: relative;
-      z-index: 1;
-      display: none;
-    }
-    #content1 > li,
-    #content2 > li {
-      padding: 10px;
-      cursor: pointer;
-      color: #437983;
-    }
-    #content1 > li:hover,
-    #content2 > li:hover {
-      color: #86E255;
+<script>
+  $("#nav2").hover(() => {
+    $('.navContent2').toggleClass('open');
+  }, () => {
+    $('.navContent2').removeClass('open');
+  })
 
-    }
-  </style>
-  <body>
-    <nav>
-      <ul>
-        <li class="mainNavStyle"><a href="">導覽內容1</a></li>
-        <li class="mainNavStyle">
-          <a href="">導覽內容2</a>
-          <ul id="content1">
-            <li>內容1</li>
-            <li>內容2</li>
-            <li>內容3</li>
-          </ul>
-        </li>
-        <li class="mainNavStyle">
-          <a href="">導覽內容3</a>
-          <ul id="content2">
-            <li>測試1</li>
-            <li>測試2</li>
-          </ul>
-        </li>
-        <li class="mainNavStyle"><a href="">導覽內容4</a></li>
-        <li class="mainNavStyle"><a href="">導覽內容5</a></li>
-      </ul>
-    </nav>
-  </body>
+  $("#nav3").hover(() => {
+    $('.navContent3').toggleClass('open');
+  }, () => {
+    $('.navContent3').removeClass('open');
+  })
+</script>
+
 </html>
