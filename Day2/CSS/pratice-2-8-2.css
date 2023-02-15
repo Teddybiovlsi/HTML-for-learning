@@ -8,11 +8,6 @@ ul {
     font-size: 0;
     /* 彈性布局 */
     display: flex;
-
-    /* display: inline-flex; */
-
-    /* display: none; */
-
 }
 
 li {
