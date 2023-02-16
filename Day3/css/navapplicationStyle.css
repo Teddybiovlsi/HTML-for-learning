@@ -14,7 +14,7 @@ li {
 ul {
   display: flex;
 }
-/* 
+
 .mainNavStyle {
   margin: 10px;
   font-size: 25px;
@@ -53,4 +53,4 @@ ul {
 #content3 > li:hover {
   color: white;
   background-color: #52156c;
-} */
+}
