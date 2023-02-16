@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <title>Day3 DOM練習</title>
-    <style>
-      ul {
-        list-style: none;
-      }
-    </style>
-  </head>
 
-  <body>
-    <ul id="firstList">
-      <li id="FruitID1">Banana, Apple, Pineapple</li>
-      <li id="FruitID2">
-        <ol>
-          <li id="buylist1">Banana</li>
-          <li id="buylist2">Apple</li>
-          <li id="buylist3">Pineapple</li>
-        </ol>
-      </li>
-    </ul>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>Day3 DOM練習</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+  </style>
+</head>
 
-  <script>
-    alert($("#FruitID2").html());
-    $("#FruitID1").html("<h1>購買清單</h1>");
-  </script>
+<body>
+  <ul id="firstList">
+    <li id="FruitID1">Banana, Apple, Pineapple</li>
+    <li id="FruitID2">
+      <ol>
+        <li id="buylist1">Banana</li>
+        <li id="buylist2">Apple</li>
+        <li id="buylist3">Pineapple</li>
+      </ol>
+    </li>
+  </ul>
+</body>
+
+<script>
+  alert($("#FruitID2").html());
+  $("#FruitID1").html("<h1>購買清單</h1>");
+</script>
+
 </html>

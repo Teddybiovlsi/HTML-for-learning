@@ -24,9 +24,9 @@
     // 原始fruit陣列
     const fruit = ["apple", "strawberry", "pineapple", "apple", "strawberry", "pineapple"];
     // 一般取出方式
-    firstFruit = fruit[0];
-    secondFruit = fruit[1];
-    thirdFruit = fruit[2];
+    // firstFruit = fruit[0];
+    // secondFruit = fruit[1];
+    // thirdFruit = fruit[2];
 
     // 解構賦值
     // [best, second, third] = fruit;
@@ -35,10 +35,12 @@
     // console.log(`My favorite food is ${best}, ${second} and ${third}`);
     // 展開語法 - 複製fruit陣列至buyList陣列中
     const buyList = [...fruit, "egg", "steak", "pork"];
+    // console.log(buyList);
     // 其餘語法
     const [first, second, third, ...other] = buyList;
+    console.log(other);
 
-    console.log(`Origin buyList array ${buyList}`);
-    console.log(`Others:${other}`);
+    // console.log(`Origin buyList array ${buyList}`);
+    // console.log(`Others:${other}`);
 
 </script>
